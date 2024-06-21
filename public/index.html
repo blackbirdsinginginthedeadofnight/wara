@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Omegool</title>
+  <link rel="icon" href="img/favicon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/landing.css" rel="stylesheet" />
+  <link href="css/landing-phone.css" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="favicon/msapplication-TileColor" content="#da532c">
+  <meta name="favicon/theme-color" content="#333333">
+</head>
+
+<body>
+  <div id="main">
+    <!-- top bar -->
+    <div id="top-bar">
+      <div id="logo">
+        <img width="20px" src="/assets/2.png" alt="Omegool" />
+      </div>
+      <div id="top-right">
+        <div id="peopleOnline">
+          <p><span>0</span>+ online now</p>
+        </div>
+        <button id="feedback-btn" class="button">Provide Feedback</button>
+      </div>
+    </div>
+
+    <!-- main content -->
+    <div id="content">
+      <!-- social message -->
+      <div id="social-message">
+
+        <div id="message-content">
+          <p id="help-text"> 
+            <h2>Omegool - The Best Omegle Alternative</h2>
+  
+            Hello and welcome to the rebirth of a legend!
+            The all-new, reimagined Omegle website!
+            <br>
+      
+            <br>
+            Whether you're looking to make new friends, share your thoughts with strangers, or explore different cultures and perspectives, 
+            the new Omegle is your gateway to an endless world of possibilities.
+            <br>
+            <br>
+         
+          </p>
+        
+        </div>
+
+        <img id="message-image" src="./assets/1.jpg"></img>
+
+      </div>
+
+      <!-- instructions -->
+      <div id="instructions">
+        <p>Video is being monitored. Keep it clean.</p>
+      </div>
+
+      <div id="options-container">
+        <!-- interests -->
+        <div id="interest-container">
+          <p>What do you wanna talk about?</p>
+          <input type="text" id="interests" placeholder="Add your interests (optional)" />
+          <div id="tag-container"></div>
+        </div>
+
+        <!-- chat options -->
+        <div id="chat-options">
+          <p>Start chatting</p>
+          <div id="button-container">
+            <button class="button"id="text-btn">Text</button>
+            <p>or</p>
+            <button class="button" id="video-btn">Video</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <p>&#169;Omegool 2024</p>
+    
+      </div>
+    </div>
+    <div id="disclaimer">
+     <p>By using the Omegool website, and/or related products and/or services, you agree to the following terms. Age Restriction Notice Important: Omegool is strictly for adults (18 years and older). We are committed to providing a mature and responsible platform for our users. If you are under 18, please do not use our service. This age restriction is in place to ensure the safety and well-being of our community. Thank you for your understanding and cooperation.</p>
+    </div>
+  </div>
+
+  <!-- feedback popup -->
+  <div id="feedbackModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Provide Feedback</h2>
+      <form id="feedbackForm">
+        <textarea id="feedbackText" rows="10" placeholder="Your feedback..." required></textarea>
+        <input type="submit" class="button" id="submit-btn" value="Submit" />
+      </form>
+    </div>
+  </div>
+
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/landing.js" type="module"></script>
+</body>
+
+</html>
