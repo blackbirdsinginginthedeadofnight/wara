@@ -24,10 +24,10 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 300px) {
   /* top bar styles */
   #top-bar {
-    padding: 10px;
+    padding: 0px;
     align-items: center;
   }
   #logo h1 {
@@ -54,7 +54,8 @@
     font-size: 16px;
   }
   #send-btn {
-    display: none;
+    padding: 2px 20px;
+    font-size: 10px;
   }
   #message-input {
     padding: 8px;

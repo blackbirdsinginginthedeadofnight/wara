@@ -44,6 +44,7 @@ p {
 }
 
 /* top bar styles */
+
 #top-bar {
   grid-area: top;
   display: flex;
@@ -77,6 +78,14 @@ p {
   flex-direction: row;
   justify-content: space-between;
 }
+#loga h1 {
+  cursor: pointer;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-left: 200px;
+}
+
 #peopleOnline p {
   color: #166af4;
   font-size: 20px;
@@ -85,6 +94,22 @@ p {
   margin: 10px;
   margin-right: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  #peopleOnline p {
+    font-size: 10px;
+  }
+  #logo {
+    height: 100%;
+  }
+  #logo img {
+    height: 100%;
+    width: 150px;
+
+}
+
+}
+
 #feedback-btn {
   margin: 0;
   padding: 8px;
@@ -169,11 +194,12 @@ p {
 }
 
 .message .you {
-  color: #4285f4;
+  
+  color: #0400ff;
 }
 
 .message .strange {
-  color: #4caf50;
+  color: #ff0000;
 }
 
 /* input area */
